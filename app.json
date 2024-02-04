@@ -6,7 +6,7 @@
   "keywords": ["telegram", "bot", "forward", "python"],
   "addons": [
     "heroku-postgresql:eco",
-    "scheduler:basic"
+    "scheduler:standard"
   ],
   "env": {
     "API_ID": {
