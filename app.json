@@ -5,10 +5,8 @@
   "logo": "https://example.com/path/to/your/logo.png",
   "keywords": ["telegram", "bot", "forward", "python"],
   "addons": [
-    {
-    "plan": "heroku-postgresql",
-      "options": {
-        "version": "12"
+    "heroku-postgresql:hobby-dev",
+    "scheduler:standard"
   ],
   "env": {
     "API_ID": {
@@ -28,14 +26,12 @@
       "required": false
     }
   },
-  "buildpacks": [
-    {
-      "url": "heroku/python"
-    }
-  ],
+  "scripts": {
+    "heroku-postbuild": "python setup.py"
+  },
   "formation": {
     "worker": {
-      "quantity": 1,
-      "size": "eco"
+      "quantity": 1
     }
-  
+  }
+}
