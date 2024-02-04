@@ -13,7 +13,7 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 logger = logging.getLogger(__name__)
 
 # Initialize Telegram bot
-bot = telegram.Bot(6801681333:AAHmfygxg6Obl84JvDu915Nwxnu2v_2zRUk)
+bot = telegram.Bot(token=6801681333:AAHmfygxg6Obl84JvDu915Nwxnu2v_2zRUk)
 
 # Create a MongoDB client
 mongo_client = MongoClient(mongodb+srv://kumisbot:<kumisbot>@kumis.psarpud.mongodb.net/?retryWrites=true&w=majority)
