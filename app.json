@@ -30,9 +30,8 @@
     "heroku-postbuild": "python setup.py"
   },
   "formation": {
-    "heroku ps:scale worker=1": {
-      "quantity": 1,
-      "size": "eco"
+    "web": {
+      "quantity": 1
     }
   }
 }
