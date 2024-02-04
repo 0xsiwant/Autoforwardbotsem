@@ -9,13 +9,13 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
 
 # Initialize the Pyrogram client
-api_id = "24317766"
-api_hash = "04032b32b0547bbf9ea81a844545ef4f"
-bot_token = "6365158055:AAFem5DZN2EBVWGQa5K9v2NTT6Bzbv0FpdY"
+api_id = "18923971"
+api_hash = "78f80e014130f4ec3964550d4e87af61"
+bot_token = "6801681333:AAHmfygxg6Obl84JvDu915Nwxnu2v_2zRUk"
 app = Client("my_bot", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
 
 # Initialize MongoDB connection
-mongo_client = pymongo.MongoClient("mongodb+srv://autoforwardbot:yuvraj178@cluster0.k6xfpbz.mongodb.net/?retryWrites=true&w=majority")
+mongo_client = pymongo.MongoClient("mongodb+srv://kumisbot:<kumisbot>@kumis.psarpud.mongodb.net/?retryWrites=true&w=majority")
 db = mongo_client["autoforwardbot"]
 status_collection = db["status"]
 
