@@ -13,11 +13,11 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 logger = logging.getLogger(__name__)
 
 # Initialize Telegram bot
-bot = telegram.Bot(token=BOT_TOKEN)
+bot = telegram.Bot(6801681333:AAHmfygxg6Obl84JvDu915Nwxnu2v_2zRUk)
 
 # Create a MongoDB client
-mongo_client = MongoClient(MONGODB_URI)
-db = mongo_client['your_database_name']  # Replace with your actual database name
+mongo_client = MongoClient(mongodb+srv://kumisbot:<kumisbot>@kumis.psarpud.mongodb.net/?retryWrites=true&w=majority)
+db = mongo_client['your_database_name']  # kumis
 user_settings_collection = db['user_settings']
 forwarded_messages_collection = db['forwarded_messages']
 
